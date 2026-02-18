@@ -1,0 +1,11 @@
+-- create table & alter
+
+create table teacher( name varchar(20), age int,salary decimal(7,2),department varchar(10));
+alter table teacher add column degree varchar(20);
+alter table teacher change department dept varchar(20);
+
+
+create table student(name varchar(20),department varchar(20),Mark_scored int);
+alter table student add column city varchar(20);
+alter TABLE student change department dept varchar(20);
+drop table student;
