@@ -9,3 +9,12 @@ create table student(name varchar(20),department varchar(20),Mark_scored int);
 alter table student add column city varchar(20);
 alter TABLE student change department dept varchar(20);
 drop table student;
+
+create table student(name varchar(20),age int,department varchar(20));
+insert into student values("Vinesh",20,"CSE");
+insert into student values("Ram",22,"MECH");
+insert into student values("Ragul",21,"ECE");
+
+select * from student;
+update student set age = 23; -- this will change over all value
+update student set age = 24 where name="Ragul";
